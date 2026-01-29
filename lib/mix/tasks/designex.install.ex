@@ -68,7 +68,7 @@ defmodule Mix.Tasks.Designex.Install do
           Invalid arguments to designex.install, expected one of:
 
               mix designex.install
-              mix designex.install 'https://github.com/netoum/designex_js/releases/download/v$version/designex-$target'
+              mix designex.install 'https://github.com/netoum/designex_cli/releases/download/v$version/designex-$target'
               mix designex.install --runtime-config
               mix designex.install --if-missing
               mix designex.install --no-deps

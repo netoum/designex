@@ -1,7 +1,7 @@
 defmodule Designex.MixProject do
   use Mix.Project
 
-  @version "1.0.2"
+  @version "1.0.3"
   @source_url "https://github.com/netoum/designex"
 
   def project do

@@ -151,7 +151,7 @@ For development, we want to enable watch mode. So find the `watchers`
 configuration in your `config/dev.exs` and add:
 
 ```elixir
-  designex: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+  designex: {Designex, :install_and_run, [:default, ~w(--watch)]}
 ```
 
 Note we are enabling the file system watcher.
