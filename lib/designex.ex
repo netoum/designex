@@ -157,7 +157,7 @@ defmodule Designex do
   configuration in your `config/dev.exs` and add:
 
   ```elixir
-  designex: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+  designex: {Designex, :install_and_run, [:default, ~w(--watch)]}
   ```
 
   Note we are enabling the file system watcher.
@@ -296,7 +296,7 @@ defmodule Designex do
   Returns the configured designex directory name.
   """
   def profile_path(profile) do
-    Path.join([configured_cd(), configured_dir(), to_string(profile)])
+    Path.join([configured_cd(), configured_dir() || to_string(profile)])
   end
 
   @doc """
